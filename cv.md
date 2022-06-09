@@ -55,6 +55,6 @@ function coinsNeeded(amount, coinDenominations) {
 
  Language | Level
 ----------|:-----:
- English   | A1
- Russian   | Native
- Tatar     | Intermediate
+ English  | A1
+ Russian  | Native
+ Tatar    | Intermediate
