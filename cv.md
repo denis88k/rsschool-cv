@@ -2,7 +2,6 @@
 
 ## Contacts:
 
-- **Phone:** +7 927 410 7830<br>
 - **E-mail:** denis88.k@mail.ru<br>
 - **Discord:** Denis(@denis88k)<br>
 - **Telegram:** @denis88k<br>
