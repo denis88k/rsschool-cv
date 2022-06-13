@@ -129,6 +129,10 @@ body.lock {
     cursor: pointer;
     font-size: 26px;
     font-weight: 400;
+}
+
+.nav-item a {
+    color: var(--white);
     transition: color .3s ease-in-out;
 }
 
@@ -143,7 +147,7 @@ body.lock {
     transition: width .25s ease-in;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     color: #777777;
 }
 
