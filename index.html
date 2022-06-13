@@ -62,44 +62,53 @@
                         </section>
                         <section class="section contacts" id="contacts">
                             <div class="section__inner">
-                                <h2 class="title">Contacts</h2>
-                                <ul class="contacts__list">
-                                    <li class="contacts-item">
-                                        <b>E-mail:</b> denis88.k@mail.ru
+                                <h2 class="title">Contacts:</h2>
+                                <ul class="contacts__list list">
+                                    <li class="contacts-item item">
+                                        <a href="mailto:denis88.k@mail.ru"><b>E-mail: </b> denis88.k@mail.ru</a>
                                     </li>
-                                    <li class="contacts-item">
-                                        <b>Discord:</b> Denis(@denis88k)
+                                    <li class="contacts-item item">
+                                        <b>Discord: </b> Denis(@denis88k)
                                     </li>
-                                    <li class="contacts-item">
-                                        <b>Telegram:</b> @denis88k
+                                    <li class="contacts-item item">
+                                        <b>Telegram: </b> @denis88k
                                     </li>
                                 </ul>
                             </div>
                         </section>
                         <section class="section skills" id="skills">
                             <div class="section__inner">
-                                <h2 class="title">Skills</h2>
-                                <ul class="skills__list">
-                                    <li class="skills-item">
+                                <h2 class="title">Skills:</h2>
+                                <ul class="skills__list list">
+                                    <li class="skills-item item">
                                         HTML5
                                     </li>
-                                    <li class="skills-item">
-                                        CSS/SCSS
+                                    <li class="skills-item item">
+                                        CSS
                                     </li>
-                                    <li class="skills-item">
+                                    <li class="skills-item item">
+                                        SCSS
+                                    </li>
+                                    <li class="skills-item item">
                                         BEM
                                     </li>
-                                    <li class="skills-item">
+                                    <li class="skills-item item">
                                         JavaScript
                                     </li>
-                                    <li class="skills-item">
+                                    <li class="skills-item item">
                                         GULP
                                     </li>
-                                    <li class="skills-item">
+                                    <li class="skills-item item">
                                         Git
                                     </li>
-                                    <li class="skills-item">
-                                        Figma/Adobe Photoshop/Adobe XD
+                                    <li class="skills-item item">
+                                        Figma
+                                    </li>
+                                    <li class="skills-item item">
+                                        Adobe Photoshop
+                                    </li>
+                                    <li class="skills-item item">
+                                        Adobe XD
                                     </li>
                                 </ul>
                             </div>
@@ -124,7 +133,7 @@
                     <div class="section__right">
                         <section class="section projects" id="projects">
                             <div class="section__inner">
-                                <h2 class="title">Projects</h2>
+                                <h2 class="title">Projects:</h2>
                                 <ul class="projects-list">
                                     <li class="projects-item">
                                         <a class="projects-link"
@@ -135,24 +144,24 @@
                                     </li>
                                     <li class="projects-item">
                                         <a class="projects-link"
+                                            href="https://denis88k.github.io/portfolio/Aod/index.html">
+                                            <img src="assets/img/aod.png" alt="Data calculation application">
+                                            <p>AOD - landing page</p>
+                                        </a>
+                                    </li>
+                                    <li class="projects-item">
+                                        <a class="projects-link"
                                             href="https://denis88k.github.io/tests/developerKDA/app/index.html">
                                             <img src="assets/img/education.png" alt="Educational projects">
                                             <p>Educational projects</p>
                                         </a>
                                     </li>
-                                    <li class="projects-item">
-                                        <a class="projects-link"
-                                            href="https://denis88k.github.io/ppTechVent/GV_Mixer/index.html">
-                                            <img src="assets/img/dataCalculateApp.png"
-                                                alt="Data calculation application">
-                                            <p>Data calculation application</p>
-                                        </a>
-                                    </li>
+
                                     <li class="projects-item">
                                         <a class="projects-link"
                                             href="https://denis88k.github.io/tests/KDA/app/index.html">
                                             <img src="assets/img/landingPage.png" alt="Landing page">
-                                            <p>Landing page</p>
+                                            <p>500x700 - Landing page</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -163,7 +172,7 @@
                                 <h2 class="title">Course:</h2>
                                 <div class="course__items">
                                     <p class="course__items-title">
-                                        HTML and CSS
+                                        HTML and CSS:
                                     </p>
                                     <ul class="course-list">
                                         <li class="course-item">
@@ -185,7 +194,7 @@
                                 </div>
                                 <div class="course__items">
                                     <p class="course__items-title">
-                                        JavaScript
+                                        JavaScript:
                                     </p>
                                     <ul class="course-list">
                                         <li class="course-item">
@@ -200,7 +209,7 @@
                                         </li>
                                         <li class="course-item">
                                             <a class="course-link" href="https://www.youtube.com/c/itgid">
-                                                WebDev from zero. Channel Alex Lushchenko
+                                                WebDev from zero
                                             </a>
                                         </li>
                                     </ul>
@@ -211,7 +220,7 @@
                             <div class="section__inner">
                                 <h2 class="title">Code Examples:</h2>
                                 <p class="code-examples__text">
-                                    <b>CODEWARS:</b>No one likes carrying change. No one enjoys carrying around
+                                    <b>CODEWARS:</b> No one likes carrying change. No one enjoys carrying around
                                     spare change. And to avoid all that jingling it's absolutely necessary to have
                                     an efficient algorithm to calculate the minimum number of coins needed to pay
                                     for something. So given a set of coin denominations determine the fewest number
@@ -220,17 +229,18 @@
                                 <div class="code-examples__code">
                                     <pre>
     <code class="language-javascript">
-        function coinsNeeded(amount, coinDenominations) {
-            let k;
-              for (k = 0; amount > 0;) {
-                elMax = Math.max(...coinDenominations);
-                c = Math.floor(amount / elMax);
-                amount = amount - c * elMax;
-                coinDenominations = coinDenominations.filter(el => el <= amount);
-                k = k + c;
-              };
-            return k;
-          }
+        function coinsNeed(amount, coinDenom){
+          let k;
+            for (k = 0; amount > 0;) {
+              elMax = Math.max(...coinDenom);
+              c = Math.floor(amount / elMax);
+              amount = amount - c * elMax;
+              coinDenom = coinDenom
+                  .filter(el => el <= amount);
+              k = k + c;
+            };
+          return k;
+        }
     </code>
 </pre>
                                 </div>
