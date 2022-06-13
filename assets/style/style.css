@@ -89,11 +89,6 @@ body.lock {
     flex: 1 1 auto;
 }
 
-.main__inner {
-    display: flex;
-    margin: 20px 0 20px;
-}
-
 .footer {
     flex: 0 0 auto;
     background-color: var(--black);
@@ -124,8 +119,6 @@ body.lock {
     font-weight: 700;
     margin-top: 80px;
 }
-
-.header__nav {}
 
 .nav-list {
     display: flex;
@@ -360,3 +353,77 @@ body.lock {
         width: 110px;
     }
 }
+
+/* main */
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.main__inner {
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.section__left {
+    width: 68.5%;
+    margin-right: 15px;
+}
+
+.section {}
+
+.section__inner {}
+
+.about-me__text {
+    font-size: 22px;
+}
+
+.contacts {}
+
+.contacts__list {}
+
+.contacts-item {
+    font-size: 18px;
+}
+
+.skills {}
+
+.skills__list {}
+
+.skills-item {}
+
+.lang {}
+
+.lang-list {}
+
+.lang-item {}
+
+.section__right {}
+
+.projects {}
+
+.projects-list {}
+
+.projects-item {}
+
+.projects-link {}
+
+.course__items {}
+
+.course__items-title {}
+
+.course-list {}
+
+.course-item {}
+
+.course-link {}
+
+.code-examples {}
+
+.code-examples__text {}
+
+.code-examples__code {}
+
+.language-javascript {}
