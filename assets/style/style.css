@@ -1,5 +1,13 @@
+:root {
+    --black: #000000;
+    --grey: #161616;
+    --white: #ffffff;
+    --top: 9px;
+}
+
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -51,4 +59,267 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.main__inner {
+    display: flex;
+    margin: 20px 0 20px;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background-color: var(--black);
+}
+
+/* header */
+
+.header {
+    background-color: var(--grey);
+}
+
+.header__inner {
+    display: flex;
+    color: var(--white);
+}
+
+.header__img {
+    width: 260px;
+}
+
+.header__nav-name {
+    padding: 50px 0 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-name {
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.header__nav {}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 400;
+    transition: color .3s ease-in-out;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transition: width .25s ease-in;
+}
+
+.nav-item:hover {
+    color: #777777;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.menu__btn {
+    display: block;
+}
+
+@media screen and (max-width: 1150px) {
+    .header__img {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .nav-item {
+        font-size: 23px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .title-name {
+        margin: 0;
+    }
+
+    .header__nav-name {
+        padding-top: 0;
+        justify-content: center;
+    }
+
+
+    .menu__btn {
+        position: absolute;
+        display: block;
+        top: 30px;
+        right: 20px;
+        width: 45px;
+        height: calc(var(--top) * 2 + 2px);
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .menu__btn span {
+        top: var(--top);
+        right: 0px;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        transition: all .25s ease-in-out;
+    }
+
+    .menu__btn span:first-child {
+        top: 0px;
+    }
+
+    .menu__btn span:last-child {
+        bottom: 0px;
+        top: auto;
+    }
+
+    .menu__btn-active span {
+        transform: scale(0);
+    }
+
+    .menu__btn-active span:first-child {
+        transform: translateY(var(--top)) rotate(-45deg);
+    }
+
+    .menu__btn-active span:last-child {
+        width: 100%;
+        transform: translateY(calc(0px - var(--top))) rotate(45deg);
+    }
+
+    .nav-list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        z-index: 5;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding: 75px 35px 0;
+        text-align: center;
+        background: var(--black);
+        transform: translateX(100%);
+        transition: all .3s ease;
+    }
+
+    .nav-list-active {
+        transform: translateX(0);
+    }
+
+    .nav-item {
+        font-size: 35px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+
+    .nav-item::before {
+        bottom: 5px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .header__nav-name {
+        padding-left: 15px;
+    }
+
+    .title-name {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title-name {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .header__nav-name {
+        padding: 0;
+    }
+
+    .header__inner {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .title-name {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .title-name {
+        font-size: 40px;
+    }
 }
