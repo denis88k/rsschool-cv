@@ -218,20 +218,20 @@
                                 </p>
                                 <div class="code-examples__code">
                                     <pre>
-                                            <code class="language-javascript">
-                                                function coinsNeeded(amount, coinDenominations) {
-                                                    let k;
-                                                      for (k = 0; amount > 0;) {
-                                                        elMax = Math.max(...coinDenominations);
-                                                        c = Math.floor(amount / elMax);
-                                                        amount = amount - c * elMax;
-                                                        coinDenominations = coinDenominations.filter(el => el <= amount);
-                                                        k = k + c;
-                                                      };
-                                                    return k;
-                                                  }
-                                            </code>
-                                        </pre>
+            <code class="language-javascript">
+                function coinsNeeded(amount, coinDenominations) {
+                    let k;
+                      for (k = 0; amount > 0;) {
+                        elMax = Math.max(...coinDenominations);
+                        c = Math.floor(amount / elMax);
+                        amount = amount - c * elMax;
+                        coinDenominations = coinDenominations.filter(el => el <= amount);
+                        k = k + c;
+                      };
+                    return k;
+                  }
+            </code>
+        </pre>
                                 </div>
                             </div>
                         </section>
@@ -245,7 +245,7 @@
                     <a class="git" href="https://github.com/denis88k">
                         <img src="assets/img/git.svg" alt="Github">
                     </a>
-                    <p>©2022 KDA</p>
+                    <p class="footer__text">©2022 KDA</p>
                     <a class="RSS" href="https://rs.school/js/">
                         <img src="assets/img/rss.svg" alt="RS School">
                     </a>

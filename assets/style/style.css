@@ -101,13 +101,12 @@ body.lock {
 
 /* header */
 
-.header {
-    background-color: var(--grey);
-}
+.header {}
 
 .header__inner {
     display: flex;
     color: var(--white);
+    background-color: var(--grey);
 }
 
 .header__img {
@@ -168,7 +167,12 @@ body.lock {
 }
 
 @media screen and (max-width: 1150px) {
-    .header__img {
+    /* .header__img {
+        margin-left: -15px;
+    } */
+
+    .header {
+        width: calc(100% + 30px);
         margin-left: -15px;
     }
 }
@@ -291,10 +295,6 @@ body.lock {
 }
 
 @media screen and (max-width: 500px) {
-    .header {
-        width: calc(100% + 30px);
-        margin-left: -15px;
-    }
 
     .header__nav-name {
         padding: 0;
@@ -321,5 +321,42 @@ body.lock {
 @media screen and (max-width: 360px) {
     .title-name {
         font-size: 40px;
+    }
+}
+
+/* footer */
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer__text {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.git {
+    width: 45px;
+    height: 45px;
+}
+
+.RSS {
+    width: 150px;
+}
+
+@media screen and (max-width: 360px) {
+    .footer__text {
+        font-size: 18px;
+    }
+
+    .git {
+        width: 37px;
+        height: 37px;
+    }
+
+    .RSS {
+        width: 110px;
     }
 }
