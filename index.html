@@ -248,7 +248,7 @@
                                                   c = Math.floor(amount / elMax);
                                                   amount = amount - c * elMax;
                                                   coinDenom = coinDenom
-                                                      .filter(el => el <= amount);
+                                                      .filter(el => el &lt;= amount);
                                                   k = k + c;
                                                 };
                                               return k;
