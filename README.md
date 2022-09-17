@@ -1,2 +1,2 @@
-- https://GITHUB-USERNAME.github.io/rsschool-cv/cv
-- https://GITHUB-USERNAME.github.io/rsschool-cv/git
+- https://denis88k.github.io/rsschool-cv/cv
+- https://denis88k.github.io/rsschool-cv/git
